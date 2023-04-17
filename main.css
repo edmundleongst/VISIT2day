@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Arimo:700&display=swap');
+/***/
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #CCC;
+	font-size: 14px;
+}
+
+::-webkit-scrollbar{
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #CCC;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	background: #336;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #333;
+}
+
+#top-nav {
+	background-color: #FFBD6C;
+	overflow: auto;
+	font-family: 'Arimo', sans-serif;
+}
+
+#top-nav #logo a{
+	padding:3px;
+}
+
+#top-nav #logo a:hover{
+	background-color: #FFBD6C;
+}
+
+#top-nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#top-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#top-nav a.active {
+  background-color: #FF4E16;
+  color: white;
+}
+#top-nav .droplist{
+	text-align:left;
+	position:absolute;
+}
+
+#top-nav .search-container {
+  float: right;
+  margin-right: 20px;
+  position:relative;
+}
+
+#userInput{
+  font-size: 16px;
+  margin: 7px auto;
+  padding: 7px 20px;
+  width: 350px;
+  border: none;
+}
+
+#userInput:focus {
+	outline: 4px solid #ddd;
+}
+	
+h1{
+	font-family: 'Playball', cursive;
+	font-size:16px;
+}
+
+p{
+	text-align:justify;
+	font-family: 'Raleway', sans-serif;
+	font-size:15px;
+	line-height: 1.5;
+	margin: 0 75px;
+}
+
+.back-top{
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.back-top a: link, a: visited, a: active{
+	color: darkslategrey, black;
+}
+
+.back-top-cont{
+	margin-right: 100px;
+	margin-left: auto;
+	text-align: right;
+}
+
+footer{
+	background-color: grey;
+
+	margin-top: 15px;
+	padding-block-start: 30px;
+	padding-block-end: 30px;
+}
+
+.footer-desc{
+	font-size:14px;
+	line-height: 1.4;
+	text-align:right;
+	color: snow;
+}

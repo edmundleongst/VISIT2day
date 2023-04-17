@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Places | VISIT2day</title>
+<link rel="stylesheet" href="main.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Arimo|Playball|Raleway&display=swap" rel="stylesheet">
+
+<style>
+h2{
+	margin:0 75px;
+}
+
+.parent {
+  position: relative;
+  width: 700px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.slides {
+  display: none;
+}
+
+.slides-img{
+	width:700px; 
+	height:350px; 
+	border-radius: 10px;
+	box-shadow: 8px -8px 10px darkslategray;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  background-color: rgba(255,255,255,0.4);
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="top-nav">
+    <div id="logo">
+	<a href="AboutUs.html">
+    <img src="img/logo/letter-v-logo-design-templates-and-monogram-vector-24037798.jpg" style="margin-left: 20px; width: 40px; height: 40px; float: left;">
+    <span style="font-size: 20px; margin-right: 50px; padding: 9px 25px;float: left; font-style: italic;">VISIT2day</span>
+	</a>
+    </div>
+    
+    <a href="index.html">Home</a>
+    <a class="active" href="Places.html">Places</a>
+	<a href="AboutUs.html">About Us</a>
+    
+    <!--Search bar function not working temporarily-->
+    <div class="search-container">
+        <input type="text" placeholder="Search..." id="userInput" onkeyup="show() filter()">
+	</div>
+</div>
+
+<h1 style="text-align:center; color: ; font-size: 2rem;">Top Attractions Places</h1>
+<div>
+<p>We have some top recommendation places for you below...</p><br>
+
+
+	<p>1) World Museums</p>
+    <p>2) The Beatles Story</p>
+    <p>3) St. John Gardens</p>
+
+
+<br><br><h2>World Museum</h2><br>
+
+<p>World Museum, a museum in Liverpool. It has extensive collections covering archaeology, ethnology and natural and physical sciences. Special attractions include the Natural History Centre and a planetarium. Entry to the museum is free. The museum is part of National Museums Liverpool.</p><br>
+
+<p>The museum was originally started as the Derby Museum as it comprised the 13th Earl of Derby's natural history collection. It opened in 1851, sharing two rooms on Duke Street with a library. However, the museum proved extremely popular and a new, purpose-built building was required.</p><br>
+
+<p>Land for the new building, on a street then known as Shaw's Brow (now William Brown Street), opposite St George's Hall, was donated by local MP and Merchant William Brown, as was much of the funding for the building which would be known as the William Brown Library and Museum. Around 400,000 people attended the opening of the new building in 1860. The museum itself was named the Liverpool Museum.</p><br>
+
+<p>In the late 19th century, the museum's collection was beginning to outgrow its building so a competition was launched to design a combined extension to the museum and college of technology. The competition was won by Edward William Mountford and the College of Technology and Museum Extension opened in 1901.</p><br>
+
+<p>Liverpool, being one of the UK's major ports, was heavily damaged by German bombing during the blitz. While much of the Museum's collection was moved to less vulnerable locations during the war, the museum building was struck by German firebombs and suffered heavy damage. Parts of the museum only began to reopen fifteen years later.</p><br>
+
+<p>The museum underwent an £35 million refurbishment in 2005 in order to double the size of the display spaces and make more of the collections accessible for visitors. A central entrance hall and six-storey atrium were created as part of the work. Major new galleries included "World Cultures", the "Bug House" and the "Weston Discovery Centre". On reopening the museum's name was changed again to World Museum.</p><br>
+
+<div class="parent">
+    <div class="slides 1">
+    <img class="slides-img" src="img/world museum/unnamed.jpg">
+    </div>
+
+
+    <div class="slides 1">
+    <img class="slides-img" src="img/world museum/World Museum atrium 1.jpg">
+    </div>
+
+    <div class="slides 1">
+    <img class="slides-img" src="img/world museum/20180907_204043.jpg">
+    </div>
+
+    <div class="slides 1">
+    <img class="slides-img" src="img/world museum/20181021_143142.jpg">
+    </div>
+    
+  <a class="prev" onclick="plusSlides1(-1)">&#9001;</a>
+  <a class="next" onclick="plusSlides1(1)">&#9002;</a>
+  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides1(slideIndex);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides1 = document.getElementsByClassName("1");
+  if (n > slides1.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides1.length}
+  for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
+  }
+  slides1[slideIndex-1].style.display = "block";
+}
+</script>
+
+<br><h2>The Beatles Story</h2><br>
+
+<p>Located in the Fab Four’s hometown of Liverpool on the stunning UNESCO World heritage waterfront at the Albert Dock, The Beatles Story takes visitors on an immersive journey through the lives, times, culture and music of the world’s greatest band.</p>
+
+<p>Multi-media audio guides are available in twelve different languages including English, French, German, Italian, Japanese, Mandarin, Polish, Russian, Spanish, Brazilian Portuguese and more recently, Korean and Cantonese. They are beautifully narrated by John Lennon’s sister, Julia. The FREE guide is packed with information, imagery, and features video interviews with Paul McCartney and Ringo Starr, giving visitors a unique insight into the story of the Fab Four.</p>
+
+<p>A must for any music fan, The Beatles Story features an impressive collection of fascinating memorabilia including the band’s original instruments, John Lennon’s New York piano, Ringo Starr’s drum kit, rare album sleeves, photography and original lyrics.</p>
+
+<p>New items recently introduced include the ‘Holy Grail’ record that launched The Beatles, Brian Epstein’s Jacket and to mark 50 years since the release of Sgt Pepper, a range of new memorabilia including a full set of authentic replica suits.</p>
+
+<p>Finish your perfect historical experience in one of two Beatles-themed Fab4 Cafes or browse through a fantastic range of products available from one of the Fab4 Stores.</p>
+
+<p>In 2018, The Beatles Story celebrated 50 years since The Beatles travelled to India with the launch of a special exhibition. ‘Beatles In India’ looks at this key period in time with new memorabilia, imagery and personal accounts from people who were there with them.</p><br>
+
+<div class="parent">
+    <div class="slides 2">
+    <img class="slides-img" src="img/the beatles story/unnamed.jpg">
+    </div>
+
+
+    <div class="slides 2">
+    <img class="slides-img" src="img/the beatles story/2019-09-17.jpg">
+    </div>
+
+    <div class="slides 2">
+    <img class="slides-img" src="img/the beatles story/2019-07-09.jpg">
+    </div>
+
+    <div class="slides 2">
+    <img class="slides-img" src="img/the beatles story/2019-07-09 (1).jpg">
+    </div>
+    
+  <a class="prev" onclick="plusSlides2(-1)">&#9001;</a>
+  <a class="next" onclick="plusSlides2(1)">&#9002;</a>
+  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides2(slideIndex);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides2 = document.getElementsByClassName("2");
+  if (n > slides2.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+  }
+  slides2[slideIndex-1].style.display = "block";
+}
+</script>
+
+<br><h2>St John's Gardens</h2><br>
+
+<p>St John's Gardens is an open space in Liverpool, England, to the west of St George's Hall. The gardens are part of the William Brown Street conservation area, and comprise one of the two open spaces within Liverpool's World Heritage Site. It has been a Green Flag site since 2003. The gardens contain ornamental flower beds, and memorials to notable people of the city.</p><br>
+
+<p>The gardens stand in a former area of heathland known as The Great Heath, which continued to exist until the middle of the 18th century. As Liverpool grew, the land was built on, and towards the end of the 19th century it had been completely developed. The land sloped upwards to the east of the developing city and was exposed to the winds, making it a suitable site for windmills and for public lines to dry washing. In 1749 the city's first General Infirmary was built on the site, followed by the Seaman's Hospital in 1752, a dispensary in 1778, and a lunatic asylum in 1789. Industry also came to the site; in addition to windmills, there were rope works, potteries, a marble yard, and a row of lime kilns.</p><br>
+
+<p>From 1767 the land towards the top of the slope had been the town cemetery, and in 1784 a church dedicated to Saint John the Baptist was built in the middle of the cemetery. By 1854 the cemetery was full, and the church was demolished in 1898. Meanwhile the other buildings in the area had been demolished, the industries closed, and St George's Hall had been built, opening in 1854. At the beginning of the 20th century it was decided to landscape the former cemetery. The remains of most of the bodies were removed and buried elsewhere. The site was redeveloped and opened in 1904 as "St John's Ornamental and Memorial Gardens". The gardens were designed by the corporation surveyor Thomas Shelmerdine. In addition to the creation of flower beds, statues and memorials were erected in the gardens.</p><br>
+
+<div class="parent">
+    <div class="slides 3">
+    <img class="slides-img" src="img/st. john garden/2020-01-14.jpg">
+    </div>
+
+
+    <div class="slides 3">
+    <img class="slides-img" src="img/st. john garden/IMG_20190710_120754993_HDR.jpg">
+    </div>
+
+    <div class="slides 3">
+    <img class="slides-img" src="img/st. john garden/IMG_20190817_162847.jpg">
+    </div>
+
+  <a class="prev" onclick="plusSlides3(-1)">&#9001;</a>
+  <a class="next" onclick="plusSlides3(1)">&#9002;</a>
+  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides3(slideIndex);
+
+function plusSlides3(n) {
+  showSlides3(slideIndex += n);
+}
+
+function currentSlide3(n) {
+  showSlides3(slideIndex = n);
+}
+
+function showSlides3(n) {
+  var i;
+  var slides3 = document.getElementsByClassName("3");
+  if (n > slides3.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides3.length}
+  for (i = 0; i < slides3.length; i++) {
+      slides3[i].style.display = "none";
+  }
+  slides3[slideIndex-1].style.display = "block";
+}
+</script>
+
+<div class="back-top-cont">
+<a class="back-top" href="#top-nav">&#8657; Back to top</a>
+</div>
+
+<footer>
+<p class="footer-desc">Interested to visit Liverpool? Come and join us.</p>
+<p class="footer-desc">We are a professional travel agency that can help you to plan your trip safely.</p>
+<p class="footer-desc">For more info, click here to look for us.</p><br>
+
+<a href="AboutUs.html" style="text-decoration: none; color: black;">
+<img src="img/logo/letter-v-logo-design-templates-and-monogram-vector-24037798.jpg" align="right" style="height: 50px; width: 50px; margin-right: 75px;">
+<br><br><br><br><p class="footer-desc">VISIT2day travel agency company</p>
+</a>
+</footer>
+
+</body>
+</html>
+
